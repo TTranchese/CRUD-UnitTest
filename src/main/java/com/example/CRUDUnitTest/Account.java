@@ -4,18 +4,18 @@ import jakarta.persistence.*;
 
 @Entity
 @Table
-public class User {
+public class Account {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue
 	private Long id;
 	private String name;
 	
-	public User(Long id, String name) {
+	public Account(Long id, String name) {
 		this.id = id;
 		this.name = name;
 	}
 	
-	public User() {
+	public Account() {
 	}
 	
 	public Long getId() {
