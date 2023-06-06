@@ -11,7 +11,9 @@ public class AccountService {
 	private AccountRepository accountRepository;
 	
 	public Account postUser(Account account) {
-		if (account != null) accountRepository.save(account);
+		if (account != null) {
+			accountRepository.save(account);
+		}
 		return account;
 	}
 	
